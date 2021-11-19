@@ -12,7 +12,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
     const enteredText = todoTextRef.current!.value;
 
     if (enteredText.trim().length === 0) {
-      // throw Error;
+      ;
       return;
     }
     props.onAddTodo(enteredText);
